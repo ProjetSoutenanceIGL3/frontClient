@@ -1,0 +1,56 @@
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.hover-bg-light:hover {
+  background-color: #f8f9fa !important;
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+.hover-bg-primary:hover {
+  background-color: #0d6efd !important; /* Bootstrap primary color */
+}
+
+.transition-all {
+  transition: all 0.2s ease;
+}
+.hover-bg-light:hover {
+  background-color: #f8f9fa !important;
+}
+
+.hover-bg-primary-dark:hover {
+  background-color: #0b5ed7 !important;
+}
+.hover-shadow:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.hover-bg-light:hover {
+  background-color: #f8f9fa !important;
+}
+
+.hover-text-primary-dark:hover {
+  color: #0b5ed7 !important;
+}
+
+.hover-text-dark:hover {
+  color: #212529 !important;
+}
+.hover-bg-opacity-20:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.hover-text-white:hover {
+  color: white !important;
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}

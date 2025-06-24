@@ -1,0 +1,58 @@
+/* ScrollingBar.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+.scrolling-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #000000ed;
+  padding: 20px 0;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.scrolling-content {
+  display: flex;
+  align-items: center;
+}
+
+.subject-item {
+  font-size: 1.3rem;
+  font-weight: lighter;
+  color: #fff;
+  margin: 0 50px;
+  position: relative;
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.8),
+    0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(0, 255, 255, 0.8),
+    0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+.subject-item::after {
+  content: "•";
+  position: absolute;
+  right: -30px;
+  color: #7f8c8d;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pour une meilleure fluidité sur tous les appareils */
+@media (prefers-reduced-motion: no-preference) {
+  .scrolling-wrapper {
+    animation: scroll 20s linear infinite;
+  }
+}
